@@ -64,7 +64,7 @@ function draw() {
 
   // Draw centroids
   for (let i = 0; i < centroids.length; i++) {
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = COLORS[i];
     ctx.beginPath();
     ctx.arc(centroids[i].x, centroids[i].y, CENTROID_RADIUS, 0, 2 * Math.PI);
     ctx.fill();
